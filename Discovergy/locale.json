@@ -1,0 +1,29 @@
+{
+  "translations": {
+    "de": {
+      "___ [ Login Data ] _____________________________________________________________________________________": "___ [ Zugangsdaten ] _________________________________________________________________________________________",
+      "___ [Settings ] ________________________________________________________________________________________": "___ [ Einstellungen ] ___________________________________________________________________________________________",
+      "Please enter your login details of your account.": "Bitte hinterlege die Zugangsdaten von deinem Discovergy Account.",
+      "Login information are valid!": "Login gültig!",
+      "E-Mail Address": "E-Mail Adresse",
+      "Password": "Passwort",
+      "Error: Your email address or password of your account is invalid!": "Fehler: Die E-Mail Adresse oder das Passwort von deinem Account ist ungültig!",
+      "Error: No data could retrieved from your account! Is your smartmeter installed correctly?": "Fehler: Es konnten keine Daten von deinem Discovergy Account ausgelesen werden! Wurde dein Smartmeter korrekt installiert und mit deinem Account verknüpft?",
+      "Get Meter": "Smartmeter Daten abrufen",
+      "Get Data": "Verbrauchsdaten abrufen",
+      "Meter Reading": "Zählerstand",
+      "Power": "Aktueller Verbrauch",
+      "Power L1": "Aktueller Verbrauch L1",
+      "Power L2": "Aktueller Verbrauch L2",
+      "Power L3": "Aktueller Verbrauch L3",
+      "Feed-In": "Einspeisung",
+      "Serial": "Seriennummer",
+      "Meter ID": "Zählernummer",
+      "Type": "Typ",
+      "Measurement Type": "Messtyp",
+      "Seconds": "Sekunden",
+      "___ [ Logging ] ________________________________________________________________________________________": "___ [ Debug Log ] _____________________________________________________________________________________________",
+      "enable logging": "Log Meldungen aktivieren"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "elements": [
+    {
+      "type": "Label",
+      "label": "___ [ Login Data ] _____________________________________________________________________________________"
+    },
+    {
+      "name": "email",
+      "type": "ValidationTextBox",
+      "caption": "E-Mail Address"
+    },
+    {
+      "name": "password",
+      "type": "PasswordTextBox",
+      "caption": "Password"
+    },
+    {
+      "type": "Label",
+      "label": "___ [Settings ] ________________________________________________________________________________________"
+    },
+    {
+      "type": "IntervalBox",
+      "name": "interval",
+      "caption": "Seconds"
+    },
+    {
+      "type": "Label",
+      "label": "___ [ Logging ] ________________________________________________________________________________________"
+    },
+    {
+      "type": "CheckBox",
+      "name": "log",
+      "caption": "enable logging"
+    }
+  ],
+  "status": [
+    {
+      "code": 101,
+      "icon": "inactive",
+      "caption": "Please enter your login details of your account."
+    },
+    {
+      "code": 102,
+      "icon": "active",
+      "caption": "Login information are valid!"
+    },
+    {
+      "code": 201,
+      "icon": "error",
+      "caption": "Error: Your email address or password of your account is invalid!"
+    },
+    {
+      "code": 202,
+      "icon": "error",
+      "caption": "Error: No data could retrieved from your account! Is your smartmeter installed correctly?"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Button",
+      "label": "Get Meter",
+      "onClick": "DC_UpdateMeter($id)"
+    },
+    {
+      "type": "Button",
+      "label": "Get Data",
+      "onClick": "DC_Update($id)"
+    }
+  ]
+}

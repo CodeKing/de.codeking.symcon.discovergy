@@ -1,0 +1,14 @@
+{
+  "id": "{D4FC7DB0-178D-4E8B-A6F1-3E41BB7CD3C3",
+  "name": "Discovergy",
+  "type": 3,
+  "vendor": "Discovergy GmbH",
+  "aliases": [
+    "Discovergy Smartmeter",
+    "Discovergy Gasmeter"
+  ],
+  "parentRequirements": [],
+  "childRequirements": [],
+  "implemented": [],
+  "prefix": "DC"
+}
