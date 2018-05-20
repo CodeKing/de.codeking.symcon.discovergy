@@ -2,6 +2,18 @@
   "elements": [
     {
       "type": "Label",
+      "label": "___ [ Support ] ________________________________________________________________________________________"
+    },
+    {
+      "type": "Label",
+      "label": "If you like this module and want to support further development of my symcon modules, feel free to donate at www.paypal.me/codeking"
+    },
+    {
+      "type": "Label",
+      "label": "www.paypal.me/codeking"
+    },
+    {
+      "type": "Label",
       "label": "___ [ Login Data ] _____________________________________________________________________________________"
     },
     {
@@ -59,12 +71,12 @@
     {
       "type": "Button",
       "label": "Get Meter",
-      "onClick": "DC_UpdateMeter($id)"
+      "onClick": "Discovergy_UpdateMeter($id)"
     },
     {
       "type": "Button",
       "label": "Get Data",
-      "onClick": "DC_Update($id)"
+      "onClick": "Discovergy_Update($id)"
     }
   ]
 }

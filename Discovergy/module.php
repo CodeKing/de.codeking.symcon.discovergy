@@ -7,17 +7,17 @@ require_once(__ROOT__ . '/libs/helpers/autoload.php');
  * Class Discovergy
  * Driver to Discovergy API
  *
- * @version     0.1
+ * @version     1.1
  * @category    Symcon
- * @package     de.codeking.symcon
+ * @package     de.codeking.symcon.discovergy
  * @author      Frank Herrmann <frank@codeking.de>
  * @link        https://codeking.de
- * @link        https://github.com/CodeKing/de.codeking.symcon
+ * @link        https://github.com/CodeKing/de.codeking.symcon.discovergy
  *
  */
-class Discovergy extends ModuleHelper
+class Discovergy extends Module
 {
-    protected $prefix = 'DC';
+    use InstanceHelper;
 
     const api = 'https://api.discovergy.com/public/v1';
 
@@ -82,7 +82,7 @@ class Discovergy extends ModuleHelper
         $this->RegisterPropertyInteger('interval', 60); // in seconds
 
         // register timer
-        $this->RegisterTimer('UpdateData', 0, $this->prefix . '_Update($_IPS[\'TARGET\']);');
+        $this->RegisterTimer('UpdateData', 0, $this->_getPrefix() . '_Update($_IPS[\'TARGET\']);');
     }
 
     /**
@@ -171,6 +171,8 @@ class Discovergy extends ModuleHelper
         // save meters
         $this->position_offset = 0;
         $this->SaveMeters();
+
+        return true;
     }
 
     /**
@@ -240,6 +242,8 @@ class Discovergy extends ModuleHelper
         // save meters
         $this->position_offset = 10;
         $this->SaveData();
+
+        return true;
     }
 
     /**
