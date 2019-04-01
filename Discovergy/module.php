@@ -576,7 +576,7 @@ class Discovergy extends Module
      * @param array $params
      * @return string
      */
-    private function _buildBaseString(string $baseURI = NULL, $method = 'GET', array $params)
+    private function _buildBaseString(string $baseURI = NULL, $method = 'GET', array $params = [])
     {
         $url = parse_url($baseURI);
         if (isset($url['query'])) {
@@ -600,7 +600,7 @@ class Discovergy extends Module
      * @param string $uri
      * @return string
      */
-    private function _buildAuthorizationHeader($request = 'GET', string $uri)
+    private function _buildAuthorizationHeader($request = 'GET', string $uri = '')
     {
         // get method by uri
         $method = basename($uri);

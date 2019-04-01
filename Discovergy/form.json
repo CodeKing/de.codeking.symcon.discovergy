@@ -71,12 +71,12 @@
     {
       "type": "Button",
       "label": "Get Meter",
-      "onClick": "Discovergy_UpdateMeter($id)"
+      "onClick": "Discovergy_UpdateMeter($id);"
     },
     {
       "type": "Button",
       "label": "Get Data",
-      "onClick": "Discovergy_Update($id)"
+      "onClick": "Discovergy_Update($id);"
     }
   ]
 }
