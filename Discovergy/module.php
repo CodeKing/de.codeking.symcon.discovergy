@@ -7,7 +7,7 @@ require_once(__ROOT__ . '/libs/helpers/autoload.php');
  * Class Discovergy
  * Driver to Discovergy API
  *
- * @version     1.1
+ * @version     1.2
  * @category    Symcon
  * @package     de.codeking.symcon.discovergy
  * @author      Frank Herrmann <frank@codeking.de>
